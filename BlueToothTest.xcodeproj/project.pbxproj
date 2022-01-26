@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		97E9E9CB27A0EA7300598543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9CA27A0EA7300598543 /* AppDelegate.swift */; };
-		97E9E9CD27A0EA7300598543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9CC27A0EA7300598543 /* SceneDelegate.swift */; };
 		97E9E9CF27A0EA7300598543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9CE27A0EA7300598543 /* ViewController.swift */; };
-		97E9E9D227A0EA7300598543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E9E9D027A0EA7300598543 /* Main.storyboard */; };
 		97E9E9D427A0EA7500598543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E9E9D327A0EA7500598543 /* Assets.xcassets */; };
 		97E9E9D727A0EA7500598543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97E9E9D527A0EA7500598543 /* LaunchScreen.storyboard */; };
+		97E9E9DF27A0EAD400598543 /* BlueToothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9DE27A0EAD400598543 /* BlueToothVC.swift */; };
+		97E9E9E127A0EAE500598543 /* BlueToothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9E027A0EAE500598543 /* BlueToothView.swift */; };
+		97E9E9E327A0EB1500598543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9E9E227A0EB1500598543 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97E9E9C727A0EA7300598543 /* BlueToothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E9E9CA27A0EA7300598543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97E9E9CC27A0EA7300598543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		97E9E9CE27A0EA7300598543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97E9E9D127A0EA7300598543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97E9E9D327A0EA7500598543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E9E9D627A0EA7500598543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97E9E9D827A0EA7500598543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E9E9DE27A0EAD400598543 /* BlueToothVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueToothVC.swift; sourceTree = "<group>"; };
+		97E9E9E027A0EAE500598543 /* BlueToothView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueToothView.swift; sourceTree = "<group>"; };
+		97E9E9E227A0EB1500598543 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../CoreBlueTest/CoreBlueTest/SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				97E9E9CA27A0EA7300598543 /* AppDelegate.swift */,
-				97E9E9CC27A0EA7300598543 /* SceneDelegate.swift */,
+				97E9E9E227A0EB1500598543 /* SceneDelegate.swift */,
 				97E9E9CE27A0EA7300598543 /* ViewController.swift */,
-				97E9E9D027A0EA7300598543 /* Main.storyboard */,
+				97E9E9DE27A0EAD400598543 /* BlueToothVC.swift */,
+				97E9E9E027A0EAE500598543 /* BlueToothView.swift */,
 				97E9E9D327A0EA7500598543 /* Assets.xcassets */,
 				97E9E9D527A0EA7500598543 /* LaunchScreen.storyboard */,
 				97E9E9D827A0EA7500598543 /* Info.plist */,
@@ -126,7 +129,6 @@
 			files = (
 				97E9E9D727A0EA7500598543 /* LaunchScreen.storyboard in Resources */,
 				97E9E9D427A0EA7500598543 /* Assets.xcassets in Resources */,
-				97E9E9D227A0EA7300598543 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +139,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E9E9E127A0EAE500598543 /* BlueToothView.swift in Sources */,
 				97E9E9CF27A0EA7300598543 /* ViewController.swift in Sources */,
 				97E9E9CB27A0EA7300598543 /* AppDelegate.swift in Sources */,
-				97E9E9CD27A0EA7300598543 /* SceneDelegate.swift in Sources */,
+				97E9E9DF27A0EAD400598543 /* BlueToothVC.swift in Sources */,
+				97E9E9E327A0EB1500598543 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97E9E9D027A0EA7300598543 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97E9E9D127A0EA7300598543 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97E9E9D527A0EA7500598543 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRA5DG5SAD;
 				INFOPLIST_FILE = BlueToothTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRA5DG5SAD;
 				INFOPLIST_FILE = BlueToothTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
